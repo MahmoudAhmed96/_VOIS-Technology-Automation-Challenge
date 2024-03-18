@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bing Regression Test Suite">
+    <parameter name="browser" value="chrome" />
+    <parameter name="url" value="https://www.bing.com" />
+    <test  name="Test Bing">
+        <classes>
+            <class name="Tests.TestPages">
+            </class>
+        </classes>
+    </test>
+</suite>

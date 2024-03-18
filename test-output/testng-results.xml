@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-17T08:43:16 EET" name="Default Suite" finished-at="2024-03-17T08:43:24 EET" duration-ms="7952">
+    <groups>
+    </groups>
+    <test started-at="2024-03-17T08:43:16 EET" name="Automation_Challenge" finished-at="2024-03-17T08:43:24 EET" duration-ms="7952">
+      <class name="Tests.TestPages">
+        <test-method is-config="true" signature="startDriver(java.lang.String,java.lang.String)[pri:0, instance:Tests.TestPages@52b1beb6]" started-at="2024-03-17T08:43:16 EET" name="startDriver" finished-at="2024-03-17T08:43:19 EET" duration-ms="2946" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.bing.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="User_Can_Search(java.lang.String)[pri:0, instance:Tests.TestPages@52b1beb6]" started-at="2024-03-17T08:43:21 EET" name="User_Can_Search" data-provider="value" finished-at="2024-03-17T08:43:22 EET" duration-ms="1171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vodafone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_Can_Search -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.TestPages@52b1beb6]" started-at="2024-03-17T08:43:22 EET" name="ScreenshotOnFailure" finished-at="2024-03-17T08:43:22 EET" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=User_Can_Search status=SUCCESS method=TestPages.User_Can_Search(java.lang.String)[pri:0, instance:Tests.TestPages@52b1beb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOnFailure -->
+        <test-method signature="user_Can_Scroll_Down_At_Page1()[pri:0, instance:Tests.TestPages@52b1beb6]" started-at="2024-03-17T08:43:22 EET" name="user_Can_Scroll_Down_At_Page1" finished-at="2024-03-17T08:43:22 EET" depends-on-methods="Tests.TestPages.User_Can_Search" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_Can_Scroll_Down_At_Page1 -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.TestPages@52b1beb6]" started-at="2024-03-17T08:43:22 EET" name="ScreenshotOnFailure" finished-at="2024-03-17T08:43:22 EET" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=user_Can_Scroll_Down_At_Page1 status=SUCCESS method=TestPages.user_Can_Scroll_Down_At_Page1()[pri:0, instance:Tests.TestPages@52b1beb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOnFailure -->
+        <test-method signature="user_Can_Navigate_To_Page2()[pri:0, instance:Tests.TestPages@52b1beb6]" started-at="2024-03-17T08:43:22 EET" name="user_Can_Navigate_To_Page2" finished-at="2024-03-17T08:43:23 EET" depends-on-methods="Tests.TestPages.user_Can_Scroll_Down_At_Page1" duration-ms="919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_Can_Navigate_To_Page2 -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.TestPages@52b1beb6]" started-at="2024-03-17T08:43:23 EET" name="ScreenshotOnFailure" finished-at="2024-03-17T08:43:23 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=user_Can_Navigate_To_Page2 status=SUCCESS method=TestPages.user_Can_Navigate_To_Page2()[pri:0, instance:Tests.TestPages@52b1beb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOnFailure -->
+        <test-method signature="user_Can_Navigate_To_Page3()[pri:0, instance:Tests.TestPages@52b1beb6]" started-at="2024-03-17T08:43:23 EET" name="user_Can_Navigate_To_Page3" finished-at="2024-03-17T08:43:24 EET" depends-on-methods="Tests.TestPages.user_Can_Navigate_To_Page2" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_Can_Navigate_To_Page3 -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.TestPages@52b1beb6]" started-at="2024-03-17T08:43:24 EET" name="ScreenshotOnFailure" finished-at="2024-03-17T08:43:24 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=user_Can_Navigate_To_Page3 status=SUCCESS method=TestPages.user_Can_Navigate_To_Page3()[pri:0, instance:Tests.TestPages@52b1beb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOnFailure -->
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:Tests.TestPages@52b1beb6]" started-at="2024-03-17T08:43:24 EET" name="stopDriver" finished-at="2024-03-17T08:43:24 EET" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- Tests.TestPages -->
+    </test> <!-- Automation_Challenge -->
+  </suite> <!-- Default Suite -->
+</testng-results>
