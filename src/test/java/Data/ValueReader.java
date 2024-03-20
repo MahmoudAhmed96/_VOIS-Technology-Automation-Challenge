@@ -11,25 +11,15 @@ import java.io.IOException;
 
 public class ValueReader {
    //initiating FileInputStream
-   FileInputStream fis = null;
+   FileInputStream fis ;
 
     // Setting the file path using system property
    String filepath = System.getProperty("user.dir") + "/src/test/java/Data/searchValue.xlsx";
 
-    // Method to get FileInputStream
-    public FileInputStream getFileInputStream() {
-        try {
-            fis = new FileInputStream(filepath);
-        } catch (FileNotFoundException e) {
-            System.out.println("Test Data file not found !! :" + e.getMessage());
-            System.exit(0);
-        }
-        return fis;
-    }
 
-    // Method to read Excel data
     public Object[][] getExcelData() throws IOException {
-        FileInputStream fis = getFileInputStream();
+        fis = new FileInputStream(filepath);
+
         XSSFWorkbook wb = new XSSFWorkbook(fis);
         Sheet sheet = wb.getSheetAt(0);
 
@@ -46,7 +36,7 @@ public class ValueReader {
         }
 
         wb.close();
-        fis.close(); // Close the FileInputStream
+        fis.close();
 
         return arraysExcelData;
     }

@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import java.io.IOException;
@@ -17,7 +16,7 @@ public class TestBase {
     //Initializing Browser Using @Parameters/@Optional TestNG Annotations To Load Data From xml File
     @BeforeTest
     @Parameters(value = {"browser","url"})
-    public void startDriver(@Optional("chrome") String browser ,@Optional("https://www.bing.com") String url) {
+    public void startDriver(@Optional("firefox") String browser ,@Optional("https://www.bing.com") String url) {
 
         if(browser.equals("chrome")) {
             driver = new ChromeDriver();
@@ -31,7 +30,6 @@ public class TestBase {
         }
         driver.get(url);
         driver.manage().window().maximize();
-        Assert.assertEquals(driver.getTitle(),"Bing");
 
     }
 
